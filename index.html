@@ -22,10 +22,9 @@
             <div class="panel__points-value">128</div>
           </div>
           <div class="panel__hearts hearts">
-            <div class="herarts__item-fill"></div>
-            <div class="herarts__item-fill"></div>
-            <div class="herarts__item-fill"></div>
-            <div class="herarts__item"></div>
+            <div class="herarts__item herarts__item_fill"></div>
+            <div class="herarts__item herarts__item_fill"></div>
+            <div class="herarts__item herarts__item_nofill"></div>
           </div>
         </div>
         <div class="info__action action">
@@ -39,6 +38,37 @@
         <div class="map__field field-third"><a href="#">🦁</a></div>
         <div class="map__field field-fourth"><a href="#">🐨</a></div>
         <div class="map__field field-fifth"><a href="#">🐯</a></div>
+      </div>
+      <div class="game__modal modal modal_end">
+        <div class="modal__wrap">
+          <div class="modal__title">Игра завершена</div>
+          <p class="modal__subtitle">Поздравляем! Вы набрали:</p>
+          <div class="modal__point point">
+            <div class="point__number">512</div>
+            <div class="point__descr">очков!</div>
+          </div>
+          <div class="modal__btn-wrap">
+            <button class="modal__btn btn">
+              <div class="btn__inner">Ok</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="game__modal modal modal_rule">
+        <div class="modal__wrap">
+          <div class="modal__title">Правила игры</div>
+          <ul class="rules">
+            <li class="rules__item">1. В одной из 5-ти норок в случайном порядке периодически появляется мышь 🐭и другие emoji 🐭🐼🐻🦊🐱🐱...</li>
+            <li class="rules__item">2. Нужно поймать мышь. При клике по мыши игроку добавляется +10 очков.</li>
+            <li class="rules__item">3. После каждой пятой пойманной мыши скорость её случайного появления увеличивается. </li>
+            <li class="rules__item">4. Если клик был выполнен по другому emoji, то у игрока отнимается жизнь. Всего 3 жизни. Если жизни закончились, то игра останавливается.</li>
+          </ul>
+          <div class="modal__btn-wrap">
+            <button class="modal__btn btn">
+              <div class="btn__inner">Ok</div>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/common.js"></script>

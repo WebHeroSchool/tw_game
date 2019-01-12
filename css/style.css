@@ -73,17 +73,15 @@ button:hover {
   font-weight: bold;
   text-align: center;
 }
-.herarts__item-fill {
-  width: 22px;
-  height: 20px;
+.herarts__item_fill{
   background: url("../img/hearts-fill.svg") no-repeat;
-  display: inline-block;
-  margin-right: 2px;
+}
+.herarts__item_nofill{
+  background: url("../img/hearts.svg") no-repeat;
 }
 .herarts__item {
   width: 22px;
   height: 20px;
-  background: url("../img/hearts.svg") no-repeat;
   display: inline-block;
   margin-right: 2px;
 }
@@ -179,4 +177,99 @@ button:hover {
     position: absolute;
     top: 430px;
     left: 650px;
+}
+
+/* Modal */
+
+.modal{
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 65px;
+  z-index: 99;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  background-color: #ffffff;
+  display: flex;
+}
+.modal__wrap{
+  background-color: #27A8F3;
+  width: 100%;
+  color: #ffffff;
+  border-radius: 65px;
+}
+.modal__title{
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #27a8f3;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 67px;
+  padding-right: 67px;
+  border-radius: 65px;
+  top: -50px;
+  margin: 0 90px;
+  position: relative;
+  text-align: center;
+}
+.modal__subtitle{
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.point{
+  text-align: center;
+}
+.point__number{
+  font-weight: bold;
+  font-size: 110px;
+}
+.point__descr{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.modal__btn-wrap{
+  position: absolute;
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modal__btn{
+  display: block;
+  border: none;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.btn__inner{
+  padding: 6px 70px;
+  background: #FFE500;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+.modal_end{
+  display: none; 
+}
+.modal_rule{
+  display: none;
+}
+.rules{
+  list-style-type: none;
+}
+.rules__item{
+  margin-bottom: 10px;
+  font-weight: bold;
 }
